@@ -1,0 +1,1 @@
+[28-May-2015 09:34:09 America/Los_Angeles] PHP Fatal error:  Call to undefined function get_header() in /home/hairfus1/public_html/wp-content/themes/avada-theme/index.php on line 1
