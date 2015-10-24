@@ -1,6 +1,6 @@
 #main { padding-top: 25px;}
 	#main .full-width h1 { text-align: center; text-transform: uppercase;}
-	#main .full-width hr { width: 20%; margin: 20px auto 0px;}
+	#main .full-width hr { width: 20%; margin: 20px auto 0px; border-top: 1px solid gray;}
 
 .page-videos section #huge_it_videogallery, .page-photos section #huge_it_gallery { background-color: #ffffff; box-shadow: none;}
 	.page-videos section #huge_it_videogallery .huge_it_big_li, .page-photos section #huge_it_gallery .huge_it_big_li { border: none; border-radius: 0px;}
