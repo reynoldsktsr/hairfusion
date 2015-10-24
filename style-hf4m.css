@@ -11,3 +11,10 @@
 
 #cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxMiddleLeft, #cboxMiddleRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight { display: none;}
 #cboxContent { height: 530px !important;}
+
+
+
+ul.fusion-megamenu li {
+	padding: 10px 0 2px 0 !important;
+	width: 25px;
+}
