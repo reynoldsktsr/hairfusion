@@ -674,6 +674,7 @@
 	<?php echo $smof_data['google_analytics']; ?>
 
 	<?php echo $smof_data['space_head']; ?>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style-hf4m.css">
 </head>
 <?php
 $body_classes = array();

@@ -712,7 +712,7 @@ body,#sidebar .slide-excerpt h2, .footer-area .slide-excerpt h2,#slidingbar-area
 <?php endif; ?>
 
 <?php if($smof_data['responsive']): ?>
-#header-sticky .avada-row,#header .avada-row, #main .avada-row, .footer-area .avada-row,#slidingbar-area .avada-row, #footer .avada-row{ max-width:940px; }
+#header-sticky .avada-row,#header .avada-row, #main .avada-row, .footer-area .avada-row,#slidingbar-area .avada-row, #footer .avada-row{ max-width:100%; }
 <?php endif; ?>
 
 <?php if($smof_data['h1_font_size']): ?>

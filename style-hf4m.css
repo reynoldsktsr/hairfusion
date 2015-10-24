@@ -1,0 +1,11 @@
+#main { padding-top: 25px;}
+
+.page-videos section #huge_it_videogallery { background-color: #ffffff; box-shadow: none;}
+	.page-videos section #huge_it_videogallery .huge_it_big_li { border: none; border-radius: 0px;}
+		.page-videos section #huge_it_videogallery .huge_it_big_li img { border-radius: 0px;}
+		.page-videos section #huge_it_videogallery .huge_it_big_li .infoLayer { border-radius: 0px; background-color: rgba(0,0,0,0.7);}
+.page-videos section div { display: none;}
+
+
+#cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxMiddleLeft, #cboxMiddleRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight { display: none;}
+#cboxContent { height: 530px !important;}
