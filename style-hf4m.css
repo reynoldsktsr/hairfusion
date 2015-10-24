@@ -1,16 +1,19 @@
 #main { padding-top: 25px;}
 	#main .full-width h1 { text-align: center; text-transform: uppercase;}
-	#main .full-width hr { width: 20%;}
+	#main .full-width hr { width: 20%; margin: 20px auto 0px;}
 
-.page-videos section #huge_it_videogallery { background-color: #ffffff; box-shadow: none;}
-	.page-videos section #huge_it_videogallery .huge_it_big_li { border: none; border-radius: 0px;}
-		.page-videos section #huge_it_videogallery .huge_it_big_li img { border-radius: 0px;}
-		.page-videos section #huge_it_videogallery .huge_it_big_li .infoLayer { border-radius: 0px; background-color: rgba(0,0,0,0.7);}
-.page-videos section div { display: none;}
+.page-videos section #huge_it_videogallery, .page-photos section #huge_it_gallery { background-color: #ffffff; box-shadow: none;}
+	.page-videos section #huge_it_videogallery .huge_it_big_li, .page-photos section #huge_it_gallery .huge_it_big_li { border: none; border-radius: 0px;}
+		.page-videos section #huge_it_videogallery .huge_it_big_li img, .page-photos section #huge_it_gallery .huge_it_big_li img { border-radius: 0px; border: none;}
+		.page-videos section #huge_it_videogallery .huge_it_big_li .infoLayer, .page-photos section #huge_it_gallery .huge_it_big_li .infoLayer { border-radius: 0px; background-color: rgba(0,0,0,0.7);}
+.page-videos section div, .page-photos section div { display: none;}
 
 
 #cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxMiddleLeft, #cboxMiddleRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight { display: none;}
 #cboxContent { height: 530px !important;}
+#cboxNext { background: url(images/controls.png) no-repeat -50px 0 !important;}
+#cboxPrevious { background: url(images/controls.png) no-repeat -75px 0 !important;}
+#cboxCurrent { color: white !important;}
 
 
 
