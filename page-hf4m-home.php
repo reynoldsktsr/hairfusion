@@ -66,13 +66,13 @@ get_header(); ?>
 	</div>
 	<script type="text/javascript">
 	document.getElementById('redirectSubscribe').onclick = function() {
-		location.href = "/subscribe";
+		location.href = "subscribe";
 	}
 	document.getElementById('redirectProcess').onclick = function() {
-		location.href = "/process";
+		location.href = "process";
 	}
 	document.getElementById('redirectContactUs').onclick = function() {
-		location.href = "/contact-us";
+		location.href = "contact-us";
 	}
 	</script>
 <?php get_footer(); ?>
