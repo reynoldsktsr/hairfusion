@@ -3,11 +3,9 @@
 get_header(); ?>
 	<div class="page-home full-width container">
 		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">
+			<div class="col-xs-12">
 				<?php echo do_shortcode('[fusionslider name="homeslider"][/fusionslider]');?>
 			</div>
-			<div class="col-md-2"></div>
 		</div>
 		<div class="row"></div>
 		<div class="col-sm-4 col-xs-6 homebox">
