@@ -33,16 +33,16 @@ get_header(); ?>
 				<h2>Process</h2>
 				<hr />
 				<p>Check out the process that we take. Yada yada words need to be put here to give the viewers a bit of an idea on how hair fusion works.</p>
-				<button>Read More</button>
+				<button id="redirectProcess">Read More</button>
 			</div>
 		</div>
 		<div class="col-sm-4 col-xs-6 homebox">
 			<div>
 				<h2>Contact Us</h2>
 				<hr>
-				<img src="/wp-content/uploads/2015/10/hf4m_logo_64.png">
+				<img src="/hf4m/wp-content/uploads/2015/10/hf4m_logo_64.png">
 				<p>Replace image above with whatever, and for more information click below to contact us.</p>
-				<button>Contact Us</button>
+				<button id="redirectContactUs">Contact Us</button>
 			</div>
 		</div>
 		<div class="col-sm-4 col-xs-6 homebox">
@@ -67,6 +67,12 @@ get_header(); ?>
 	<script type="text/javascript">
 	document.getElementById('redirectSubscribe').onclick = function() {
 		location.href = "/subscribe";
+	}
+	document.getElementById('redirectProcess').onclick = function() {
+		location.href = "/process";
+	}
+	document.getElementById('redirectContactUs').onclick = function() {
+		location.href = "/contact-us";
 	}
 	</script>
 <?php get_footer(); ?>
