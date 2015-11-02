@@ -1,7 +1,7 @@
 <?php
 // Template Name: Hf4M About Us
 get_header(); ?>
-	<div class="page-aboutus full-width">
+	<div class="page-aboutus full-width container">
 		<h1><?php the_title();?></h1>
 		<hr />
 		<p>We are the leader in Scalp Micro Pigmentation. In this new industry that offers a different, better solution to the problems of hair loss, we have the most experience and lead the field in innovations that directly lead to the best results and your satisfaction.</p>

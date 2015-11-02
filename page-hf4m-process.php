@@ -1,7 +1,7 @@
 <?php
 // Template Name: Hf4M Process
 get_header(); ?>
-	<div class="page-process full-width">
+	<div class="page-process full-width container">
 		<h1><?php the_title();?></h1>
 		<hr />
 	</div>

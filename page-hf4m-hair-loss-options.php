@@ -1,7 +1,7 @@
 <?php
 // Template Name: Hf4M Hair Loss
 get_header(); ?>
-	<div class="page-aboutus full-width">
+	<div class="page-aboutus full-width container">
 		<h1><?php the_title();?></h1>
 		<hr />
 		<p>According to the American Hair Loss Association, “Androgenetic alopecia or common male pattern baldness (MPB) accounts for more than 95% of hair loss in men. By the age of thirty-five two-thirds of American men will experience some degree of appreciable hair loss and by the age of 50 approximately 85% of men have significantly thinning hair. Approximately twenty five percent of men who suffer with male pattern baldness begin the painful process before they reach the age of twenty-one”.</p>
