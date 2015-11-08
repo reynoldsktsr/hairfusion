@@ -7,23 +7,25 @@ get_header(); ?>
 				<?php echo do_shortcode('[fusionslider name="homeslider"][/fusionslider]');?>
 			</div>
 		</div>
-		<div class="row"></div>
-		<div class="col-sm-4 col-xs-6 homebox">
-			<div><?php echo do_shortcode('[fusionslider name="menofhairfusion"][/fusionslider]');?></div>
-		</div>
-		<div class="col-sm-4 col-xs-6 homebox">
-			<div>
-				<?php while ( have_posts() ) : the_post();
-				echo "<iframe id='homepagevideo' width='100%' height='100%' src='" . get_the_content() . "?rel=0&amp;showinfo=0;autoplay=1' frameborder='0'></iframe>";
-				endwhile; ?>
+		<!-- <div class="row"></div> -->
+		<div class="row">
+			<div class="col-sm-6 col-xs-12 homebox doubleHeight">
+				<div><?php echo do_shortcode('[fusionslider name="menofhairfusion"][/fusionslider]');?></div>
 			</div>
-		</div>
-		<div class="col-sm-4 col-xs-6 homebox">
-			<div>
-				<h2>Subscribe</h2>
-				<hr>
-				<p>You should subscribe to recieve more information and special offers. This is temporary content and can be replaced.</p>
-				<button id="redirectSubscribe">Subscribe</button>
+			<div class="col-sm-6 col-xs-12 homebox">
+				<div>
+					<?php while ( have_posts() ) : the_post();
+					echo "<iframe id='homepagevideo' width='100%' height='100%' src='" . get_the_content() . "?rel=0&amp;showinfo=0;autoplay=1' frameborder='0'></iframe>";
+					endwhile; ?>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xs-12 homebox">
+				<div>
+					<h2>Subscribe</h2>
+					<hr>
+					<p>You should subscribe to recieve more information and special offers. This is temporary content and can be replaced.</p>
+					<button id="redirectSubscribe">Subscribe</button>
+				</div>
 			</div>
 		</div>
 		<div class="col-sm-4 col-xs-6 homebox">

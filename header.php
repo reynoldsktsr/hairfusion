@@ -705,136 +705,136 @@ if( $smof_data['layout'] == 'Boxed' || get_post_meta($c_pageID, 'pyre_page_bg_la
 ?>
 <body <?php body_class( $body_classes ); ?> data-spy="scroll">
 	<div id="wrapper" class="<?php echo $wrapper_class; ?>">
-	<?php if( $smof_data['slidingbar_widgets'] && ! is_page_template( 'blank.php' ) ): ?>
-	<?php get_template_part( 'slidingbar' ); ?>
-	<?php endif; ?>
-	<?php
-	get_template_part( 'framework/templates/header' );
-	avada_header_template( 'Below' );
-	?>
-	<div id="sliders-container">
-	<?php
-	if( is_search() ) {
-		$slider_page_id = '';
-	}
-	if( ! is_search() ) {
-		// Layer Slider
-		$slider_page_id = '';
-		if ( ! is_home() && ! is_front_page() && ! is_archive() && isset( $object_id ) ) {
-			$slider_page_id = $object_id;
+		<?php if( $smof_data['slidingbar_widgets'] && ! is_page_template( 'blank.php' ) ): ?>
+		<?php get_template_part( 'slidingbar' ); ?>
+		<?php endif; ?>
+		<?php
+		get_template_part( 'framework/templates/header' );
+		avada_header_template( 'Below' );
+		?>
+		<div id="sliders-container">
+		<?php
+		if( is_search() ) {
+			$slider_page_id = '';
 		}
-		if ( ! is_home() && is_front_page() && isset( $object_id ) ) {
-			$slider_page_id = $object_id;
+		if( ! is_search() ) {
+			// Layer Slider
+			$slider_page_id = '';
+			if ( ! is_home() && ! is_front_page() && ! is_archive() && isset( $object_id ) ) {
+				$slider_page_id = $object_id;
+			}
+			if ( ! is_home() && is_front_page() && isset( $object_id ) ) {
+				$slider_page_id = $object_id;
+			}
+			if ( is_home() && ! is_front_page() ) {
+				$slider_page_id = get_option( 'page_for_posts' );
+			}
+			if ( class_exists( 'Woocommerce' ) ) {
+				if ( is_shop() ) {
+					$slider_page_id = get_option( 'woocommerce_shop_page_id' );
+				}
+			}
+			avada_slider( $slider_page_id );
 		}
-		if ( is_home() && ! is_front_page() ) {
-			$slider_page_id = get_option( 'page_for_posts' );
+		?>
+		</div>
+		<?php if(get_post_meta($slider_page_id, 'pyre_fallback', true)): ?>
+			<div id="fallback-slide">
+				<img src="<?php echo get_post_meta($slider_page_id, 'pyre_fallback', true); ?>" alt="" />
+			</div>
+		<?php endif; ?>
+		<?php
+		avada_header_template( 'Above' );
+		avada_current_page_title_bar( $c_pageID );
+		?>
+		<?php if(is_page_template('contact.php') && $smof_data['recaptcha_public'] && $smof_data['recaptcha_private']): ?>
+		<script type="text/javascript">
+		 var RecaptchaOptions = {
+		    theme : '<?php echo $smof_data['recaptcha_color_scheme']; ?>'
+		 };
+	 	</script>
+	 	<?php endif; ?>
+		<?php if(is_page_template('contact.php') && $smof_data['gmap_address'] && !$smof_data['status_gmap']): ?>
+		<?php
+		if( ! $smof_data['map_popup'] ) {
+			$map_popup = 'yes';
+		} else {
+			$map_popup = 'no';
 		}
-		if ( class_exists( 'Woocommerce' ) ) {
-			if ( is_shop() ) {
-				$slider_page_id = get_option( 'woocommerce_shop_page_id' );
+		if( ! $smof_data['map_scrollwheel'] ) {
+			$map_scrollwheel = 'yes';
+		} else {
+			$map_scrollwheel = 'no';
+		}
+		if( ! $smof_data['map_scale'] ) {
+			$map_scale = 'yes';
+		} else {
+			$map_scale = 'no';
+		}
+		if( ! $smof_data['map_zoomcontrol'] ) {
+			$map_zoomcontrol = 'yes';
+		} else {
+			$map_zoomcontrol = 'no';
+		}
+		if( ! $smof_data['map_pin'] ) {
+			$address_pin = 'yes';
+		} else {
+			$address_pin = 'no';
+		}
+		echo do_shortcode('[avada_map address="' . $smof_data['gmap_address'] . '" type="' . $smof_data['gmap_type'] . '" address_pin="' . $address_pin . '" map_style="' . $smof_data['map_styling'] . '" overlay_color="' . $smof_data['map_overlay_color'] . '" infobox="' . $smof_data['map_infobox_styling'] . '" infobox_background_color="' . $smof_data['map_infobox_bg_color'] . '" infobox_text_color="' . $smof_data['map_infobox_text_color'] . '" infobox_content="' . $smof_data['map_infobox_content'] . '" icon="' . $smof_data['map_custom_marker_icon'] . '" width="' . $smof_data['gmap_width'] . '" height="' . $smof_data['gmap_height'] . '" zoom="' . $smof_data['map_zoom_level'] . '" scrollwheel="' . $map_scrollwheel . '" scale="' . $map_scale . '" zoom_pancontrol="' . $map_zoomcontrol . '" popup="' . $map_popup . '"][/avada_map]');
+		?>
+		<?php endif; ?>
+		<?php if(is_page_template('contact-2.php') && $smof_data['gmap_address'] && !$smof_data['status_gmap']): ?>
+		<?php
+		if( $smof_data['map_popup'] ) {
+			$map_popup = 'yes';
+		} else {
+			$map_popup = 'no';
+		}
+		if( ! $smof_data['map_scrollwheel'] ) {
+			$map_scrollwheel = 'yes';
+		} else {
+			$map_scrollwheel = 'no';
+		}
+		if( ! $smof_data['map_scale'] ) {
+			$map_scale = 'yes';
+		} else {
+			$map_scale = 'no';
+		}
+		if( ! $smof_data['map_zoomcontrol'] ) {
+			$map_zoomcontrol = 'yes';
+		} else {
+			$map_zoomcontrol = 'no';
+		}
+		echo do_shortcode('[avada_map address="' . $smof_data['gmap_address'] . '" type="' . $smof_data['gmap_type'] . '" map_style="' . $smof_data['map_styling'] . '" overlay_color="' . $smof_data['map_overlay_color'] . '" infobox="' . $smof_data['map_infobox_styling'] . '" infobox_background_color="' . $smof_data['map_infobox_bg_color'] . '" infobox_text_color="' . $smof_data['map_infobox_text_color'] . '" infobox_content="' . $smof_data['map_infobox_content'] . '" icon="' . $smof_data['map_custom_marker_icon'] . '" width="' . $smof_data['gmap_width'] . '" height="' . $smof_data['gmap_height'] . '" zoom="' . $smof_data['map_zoom_level'] . '" scrollwheel="' . $map_scrollwheel . '" scale="' . $map_scale . '" zoom_pancontrol="' . $map_zoomcontrol . '" popup="' . $map_popup . '"][/avada_map]');
+		?>
+		<?php endif; ?>
+		<?php
+		$main_css = '';
+		$row_css = '';
+		$main_class = '';
+		$page_template = '';
+
+		if (is_woocommerce()) {
+			$custom_fields = get_post_custom_values('_wp_page_template', $c_pageID);
+			if(is_array($custom_fields) && !empty($custom_fields)) {
+				$page_template = $custom_fields[0];
+			} else {
+				$page_template = '';
 			}
 		}
-		avada_slider( $slider_page_id );
-	}
-	?>
-	</div>
-	<?php if(get_post_meta($slider_page_id, 'pyre_fallback', true)): ?>
-		<div id="fallback-slide">
-			<img src="<?php echo get_post_meta($slider_page_id, 'pyre_fallback', true); ?>" alt="" />
-		</div>
-	<?php endif; ?>
-	<?php
-	avada_header_template( 'Above' );
-	avada_current_page_title_bar( $c_pageID );
-	?>
-	<?php if(is_page_template('contact.php') && $smof_data['recaptcha_public'] && $smof_data['recaptcha_private']): ?>
-	<script type="text/javascript">
-	 var RecaptchaOptions = {
-	    theme : '<?php echo $smof_data['recaptcha_color_scheme']; ?>'
-	 };
- 	</script>
- 	<?php endif; ?>
-	<?php if(is_page_template('contact.php') && $smof_data['gmap_address'] && !$smof_data['status_gmap']): ?>
-	<?php
-	if( ! $smof_data['map_popup'] ) {
-		$map_popup = 'yes';
-	} else {
-		$map_popup = 'no';
-	}
-	if( ! $smof_data['map_scrollwheel'] ) {
-		$map_scrollwheel = 'yes';
-	} else {
-		$map_scrollwheel = 'no';
-	}
-	if( ! $smof_data['map_scale'] ) {
-		$map_scale = 'yes';
-	} else {
-		$map_scale = 'no';
-	}
-	if( ! $smof_data['map_zoomcontrol'] ) {
-		$map_zoomcontrol = 'yes';
-	} else {
-		$map_zoomcontrol = 'no';
-	}
-	if( ! $smof_data['map_pin'] ) {
-		$address_pin = 'yes';
-	} else {
-		$address_pin = 'no';
-	}
-	echo do_shortcode('[avada_map address="' . $smof_data['gmap_address'] . '" type="' . $smof_data['gmap_type'] . '" address_pin="' . $address_pin . '" map_style="' . $smof_data['map_styling'] . '" overlay_color="' . $smof_data['map_overlay_color'] . '" infobox="' . $smof_data['map_infobox_styling'] . '" infobox_background_color="' . $smof_data['map_infobox_bg_color'] . '" infobox_text_color="' . $smof_data['map_infobox_text_color'] . '" infobox_content="' . $smof_data['map_infobox_content'] . '" icon="' . $smof_data['map_custom_marker_icon'] . '" width="' . $smof_data['gmap_width'] . '" height="' . $smof_data['gmap_height'] . '" zoom="' . $smof_data['map_zoom_level'] . '" scrollwheel="' . $map_scrollwheel . '" scale="' . $map_scale . '" zoom_pancontrol="' . $map_zoomcontrol . '" popup="' . $map_popup . '"][/avada_map]');
-	?>
-	<?php endif; ?>
-	<?php if(is_page_template('contact-2.php') && $smof_data['gmap_address'] && !$smof_data['status_gmap']): ?>
-	<?php
-	if( $smof_data['map_popup'] ) {
-		$map_popup = 'yes';
-	} else {
-		$map_popup = 'no';
-	}
-	if( ! $smof_data['map_scrollwheel'] ) {
-		$map_scrollwheel = 'yes';
-	} else {
-		$map_scrollwheel = 'no';
-	}
-	if( ! $smof_data['map_scale'] ) {
-		$map_scale = 'yes';
-	} else {
-		$map_scale = 'no';
-	}
-	if( ! $smof_data['map_zoomcontrol'] ) {
-		$map_zoomcontrol = 'yes';
-	} else {
-		$map_zoomcontrol = 'no';
-	}
-	echo do_shortcode('[avada_map address="' . $smof_data['gmap_address'] . '" type="' . $smof_data['gmap_type'] . '" map_style="' . $smof_data['map_styling'] . '" overlay_color="' . $smof_data['map_overlay_color'] . '" infobox="' . $smof_data['map_infobox_styling'] . '" infobox_background_color="' . $smof_data['map_infobox_bg_color'] . '" infobox_text_color="' . $smof_data['map_infobox_text_color'] . '" infobox_content="' . $smof_data['map_infobox_content'] . '" icon="' . $smof_data['map_custom_marker_icon'] . '" width="' . $smof_data['gmap_width'] . '" height="' . $smof_data['gmap_height'] . '" zoom="' . $smof_data['map_zoom_level'] . '" scrollwheel="' . $map_scrollwheel . '" scale="' . $map_scale . '" zoom_pancontrol="' . $map_zoomcontrol . '" popup="' . $map_popup . '"][/avada_map]');
-	?>
-	<?php endif; ?>
-	<?php
-	$main_css = '';
-	$row_css = '';
-	$main_class = '';
-	$page_template = '';
 
-	if (is_woocommerce()) {
-		$custom_fields = get_post_custom_values('_wp_page_template', $c_pageID);
-		if(is_array($custom_fields) && !empty($custom_fields)) {
-			$page_template = $custom_fields[0];
-		} else {
-			$page_template = '';
+		if(is_page_template('100-width.php') || is_page_template('blank.php') ||get_post_meta($slider_page_id, 'pyre_portfolio_width_100', true) == 'yes' || $page_template == '100-width.php') {
+			$main_css = 'padding-left:0px;padding-right:0px;';
+			if($smof_data['hundredp_padding'] && !get_post_meta($c_pageID, 'pyre_hundredp_padding', true)) {
+				$main_css = 'padding-left:'.$smof_data['hundredp_padding'].';padding-right:'.$smof_data['hundredp_padding'];
+			}
+			if(get_post_meta($c_pageID, 'pyre_hundredp_padding', true)) {
+				$main_css = 'padding-left:'.get_post_meta($c_pageID, 'pyre_hundredp_padding', true).';padding-right:'.get_post_meta($c_pageID, 'pyre_hundredp_padding', true);
+			}
+			$row_css = 'max-width:100%;';
+			$main_class = 'width-100';
 		}
-	}
-
-	if(is_page_template('100-width.php') || is_page_template('blank.php') ||get_post_meta($slider_page_id, 'pyre_portfolio_width_100', true) == 'yes' || $page_template == '100-width.php') {
-		$main_css = 'padding-left:0px;padding-right:0px;';
-		if($smof_data['hundredp_padding'] && !get_post_meta($c_pageID, 'pyre_hundredp_padding', true)) {
-			$main_css = 'padding-left:'.$smof_data['hundredp_padding'].';padding-right:'.$smof_data['hundredp_padding'];
-		}
-		if(get_post_meta($c_pageID, 'pyre_hundredp_padding', true)) {
-			$main_css = 'padding-left:'.get_post_meta($c_pageID, 'pyre_hundredp_padding', true).';padding-right:'.get_post_meta($c_pageID, 'pyre_hundredp_padding', true);
-		}
-		$row_css = 'max-width:100%;';
-		$main_class = 'width-100';
-	}
-	?>
+		?>
 	<div id="main" class="clearfix <?php echo $main_class; ?>" style="<?php echo $main_css; ?>">
 		<div class="avada-row" style="<?php echo $row_css; ?>">

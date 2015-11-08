@@ -1,11 +1,14 @@
+
 #main { padding-top: 25px; padding-bottom: 25px;}
+	#main .container { max-width: none;}
 	#main .full-width h1 { text-align: center; text-transform: uppercase; margin: .67em;}
 	#main .full-width hr { width: 20%; margin: 20px auto 0px; border-top: 1px solid gray;}
 	#main .page-photos hr { margin-bottom: 30px;}
 	#main .page-home { padding: 0 20px;}
 
 .page-home .row { padding-top: 25px;}
-	.page-home .homebox { height: 200px; margin-bottom: 30px;}
+	.page-home .homebox { height: 335px; margin-bottom: 30px;}
+	.page-home .homebox.doubleHeight { height: 700px;}
 		.page-home .homebox div{ height: 100%; /*border: 1px solid gray*/;}
 			.page-home .homebox div h2 { text-align: center; text-transform: uppercase;}
 			.page-home .homebox div hr { width: 40% !important;}
