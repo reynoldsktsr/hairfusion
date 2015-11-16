@@ -33,3 +33,6 @@ ul.fusion-megamenu li {
 	padding: 10px 0 2px 0 !important;
 	width: 25px;
 }
+ul.about-menu, ul.faq-menu { list-style: none; padding: 0; text-transform: uppercase; font-weight: bold; font-size: 12pt;}
+	ul.about-menu li, ul.faq-menu li { border-top: 1px solid gray; padding: 15px 0;}
+	ul.about-menu li:nth-child(1), ul.faq-menu li:nth-child(1) { border:none;}
