@@ -21,7 +21,7 @@ function avada_header_template( $slider_position = 'Below' ) {
 		get_post_meta($c_pageID, 'pyre_display_header', true) != 'no'
 	) {
 ?>
-			<div class="header-wrapper">
+			<div class="header-wrapper container" style="padding:0;">
 				<?php
 				if($smof_data['header_layout']) {
 					if(is_page('header-2')) {

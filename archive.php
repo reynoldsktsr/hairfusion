@@ -33,6 +33,7 @@
 		}
 	}
 	?>
+<div class="page-category full-width container">
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<?php if(category_description()): ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -230,5 +231,6 @@
 	}
 	?>
 	</div>
+</div>
 	<?php endif; ?>
 <?php get_footer(); ?>

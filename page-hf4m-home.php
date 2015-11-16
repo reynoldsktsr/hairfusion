@@ -23,8 +23,9 @@ get_header(); ?>
 				<div>
 					<h2>Subscribe</h2>
 					<hr>
-					<p>You should subscribe to recieve more information and special offers. This is temporary content and can be replaced.</p>
-					<button id="redirectSubscribe">Subscribe</button>
+					<p>Subscribe Now to Keep Updated with the product!</p>
+					<?php echo do_shortcode('[newsletter]');?>
+					<!-- <button id="redirectSubscribe">Subscribe</button> -->
 				</div>
 			</div>
 		</div>

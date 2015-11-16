@@ -33,6 +33,7 @@
 		$sidebar_exists = false;
 	}
 	?>
+<div class="page-post full-width container">
 	<div id="content" class="<?php echo $content_class; ?>" style="<?php echo $content_css; ?>">
 		<?php if(!$smof_data['blog_pn_nav']): ?>
 		<div class="single-navigation clearfix">
@@ -324,5 +325,6 @@
 	<div id="sidebar" style="<?php echo $sidebar_css; ?>">
 	<?php generated_dynamic_sidebar(); ?>
 	</div>
+</div>
 	<?php endif; ?>
 <?php get_footer(); ?>
