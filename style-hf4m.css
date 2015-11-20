@@ -36,3 +36,7 @@ ul.fusion-megamenu li {
 ul.about-menu, ul.faq-menu, ul.mpb-menu { list-style: none; padding: 0; text-transform: uppercase; font-weight: bold; font-size: 12pt;}
 	ul.about-menu li, ul.faq-menu li, ul.mpb-menu li { border-top: 1px solid gray; padding: 15px 0;}
 	ul.about-menu li:nth-child(1), ul.faq-menu li:nth-child(1), ul.mpb-menu li:nth-child(1) { border:none;}
+ul.main-menu { list-style: none; text-align: center;}
+	ul.main-menu li { display: inline-block;}
+		ul.main-menu li a { padding-right: 20px;}
+		ul.main-menu li ul { display: inline-block; padding-left: 0;}

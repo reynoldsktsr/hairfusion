@@ -70,9 +70,18 @@
 			  ( ! $smof_data['footer_copyright'] && get_post_meta($c_pageID, 'pyre_display_copyright', true) == 'yes') ): ?>
 	<footer id="footer" class="container">
 		<div class="avada-row">
+			<div class="col-xs-12">
+				<?php 
+				$defaults = array(
+					'menu' => 'Top Menu',
+					'menu_class' => 'main-menu'
+					);
+				wp_nav_menu($defaults);
+				 ?>
+			</div>
 			<div class="copyright-area-content">
 				<div class="copyright">
-					<div><?php echo $smof_data['footer_text'] ?></div>
+					<?php echo $smof_data['footer_text'] ?>
 				</div>
 				<div class="fusion-social-links-footer">
 				<?php if($smof_data['icons_footer']) {
