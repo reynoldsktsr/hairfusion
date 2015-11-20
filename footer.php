@@ -68,7 +68,7 @@
 	<?php endif; ?>
 	<?php if( ($smof_data['footer_copyright'] && get_post_meta($c_pageID, 'pyre_display_copyright', true) != 'no') ||
 			  ( ! $smof_data['footer_copyright'] && get_post_meta($c_pageID, 'pyre_display_copyright', true) == 'yes') ): ?>
-	<footer id="footer">
+	<footer id="footer" class="container">
 		<div class="avada-row">
 			<div class="copyright-area-content">
 				<div class="copyright">

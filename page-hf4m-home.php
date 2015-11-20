@@ -15,7 +15,7 @@ get_header(); ?>
 			<div class="col-sm-6 col-xs-12 homebox">
 				<div>
 					<?php while ( have_posts() ) : the_post();
-					echo "<iframe id='homepagevideo' width='100%' height='100%' src='" . get_the_content() . "?rel=0&amp;showinfo=0;autoplay=1' frameborder='0'></iframe>";
+					echo "<iframe id='homepagevideo' width='100%' height='100%' src='" . get_the_content() . "?rel=0&showinfo=0&autoplay=0&enablejsapi=1&controls=0' frameborder='0' volume='0'></iframe>";
 					endwhile; ?>
 				</div>
 			</div>
