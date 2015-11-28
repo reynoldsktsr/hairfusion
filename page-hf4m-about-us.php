@@ -16,7 +16,7 @@ while(have_posts()): the_post();
 		<div class="col-sm-8">
 			<h1><?php the_title();?></h1>
 			<hr />
-			<?php the_content();?>
+			<span style="text-align: justify;"><?php the_content();?></span>
 		</div>
 		<div class="col-sm-2">
 			<div class="row">

@@ -2,8 +2,8 @@
 // Template Name: Hf4M Home
 get_header(); ?>
 	<div class="page-home full-width container">
-		<div class="row">
-			<div class="col-xs-12">
+		<div class="">
+			<div class="col-xs-12" id="homeslider">
 				<?php echo do_shortcode('[fusionslider name="homeslider"][/fusionslider]');?>
 			</div>
 		</div>
