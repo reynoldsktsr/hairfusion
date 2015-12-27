@@ -68,7 +68,7 @@
 	<?php endif; ?>
 	<?php if( ($smof_data['footer_copyright'] && get_post_meta($c_pageID, 'pyre_display_copyright', true) != 'no') ||
 			  ( ! $smof_data['footer_copyright'] && get_post_meta($c_pageID, 'pyre_display_copyright', true) == 'yes') ): ?>
-	<footer id="footer" class="container">
+	<footer id="footer">
 		<div class="avada-row">
 			<div class="col-xs-12">
 				<?php 
@@ -117,5 +117,30 @@
 	<!--[if lte IE 8]>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/respond.js"></script>
 	<![endif]-->
+
+	 
+	<script src="<?php echo get_template_directory_uri();?>/swiper/js/swiper.js"></script>
+	<script src="<?php echo get_template_directory_uri();?>/swiper/js/swiper.min.js"></script>
+	<script src="<?php echo get_template_directory_uri();?>/swiper/js/swiper.jquery.js"></script>
+	<script src="<?php echo get_template_directory_uri();?>/swiper/js/swiper.jquery.min.js"></script>
+	  <script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: 6000,
+    spaceBetween: 20,
+    
+    // If we need pagination
+    // pagination: '.swiper-pagination',
+    
+    // Navigation arrows
+    // nextButton: '.swiper-button-next',
+    // prevButton: '.swiper-button-prev',
+    
+    // And if we need scrollbar
+    // scrollbar: '.swiper-scrollbar',
+  })        
+  </script>
 </body>
 </html>

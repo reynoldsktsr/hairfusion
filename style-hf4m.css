@@ -1,10 +1,11 @@
+.header-v5 #header { border: none;}
 
-#main { padding-top: 25px; padding-bottom: 25px;}
+#main { padding: 0 0 25px;}
 	#main .container { max-width: none;}
 	#main .full-width h1 { text-align: center; text-transform: uppercase; margin: .67em;}
 	#main .full-width hr { width: 20%; margin: 20px auto 0px; border-top: 1px solid gray;}
 	#main .page-photos hr { margin-bottom: 30px;}
-	#main .page-home { padding: 0 20px;}
+	#main .page-home { width: 100%;}
 
 .page-home .row { padding-top: 25px;}
 	.page-home .homebox { height: 335px; margin-bottom: 30px;}
@@ -27,7 +28,18 @@
 #cboxPrevious { background: url(images/controls.png) no-repeat -75px 0 !important;}
 #cboxCurrent { color: white !important;}
 
-
+.tagline { background: #dec162; text-transform: uppercase; font-weight: 50; text-align: center; min-height: 60px;}
+	.tagline p { font-size: 22pt; margin: 10px auto; font-weight: 100;}
+.swiper-container { max-width: 1260px; display: block; margin-left: 50% !important; transform: translateX(-50%);}
+/*@media only screen and (max-width: 1299px) {
+	.swiper-container { height: 448px;}
+}
+@media only screen and (max-width: 1199px) {
+	.swiper-container { height: 369px;}
+}
+@media only screen and (max-width: 991px) {
+	.swiper-container { height: 282px;}
+}*/
 
 ul.fusion-megamenu li {
 	padding: 10px 0 2px 0 !important;

@@ -11,7 +11,7 @@ if( ( ($smof_data['header_transparent'] && get_post_meta($c_pageID, 'pyre_transp
 ?>
 
 <?php if( $smof_data['header_sticky'] ): ?>
-<header id="header-sticky" class="sticky-header" style="max-width:1300px; margin-left:50%; transform:translateX(-50%);">
+<header id="header-sticky" class="sticky-header">
 <div class="sticky-shadow">
 	<div class="avada-row">
 		<div class="logo">
