@@ -1,4 +1,10 @@
 .header-v5 #header { border: none;}
+#nav.nav-holder .navigation > li > a { text-decoration: none; font-family: 'Helvetica Neue', sans-serif, arial; text-transform: uppercase; font-weight: 100; letter-spacing: 1px;}
+#wrapper #nav .fusion-navbar-nav .fusion-megamenu-wrapper li a { font-family:  'Helvetica Neue', sans-serif, arial; text-transform: uppercase; font-size: 11pt;}
+#wrapper #nav .fusion-navbar-nav .fusion-megamenu-wrapper li a:hover { color: #27100a;}
+#wrapper .fusion-megamenu-wrapper.col-span-3 { width: 160px;}
+#wrapper .fusion-megamenu-wrapper .fusion-megamenu-holder { border: none;}
+#nav .fusion-navbar-nav .fusion-megamenu-wrapper .fusion-megamenu-holder .fusion-megamenu .fusion-megamenu-submenu { border: none; display: block; width: 100%;}
 
 #main { padding: 0 0 25px;}
 	#main .container { max-width: none;}

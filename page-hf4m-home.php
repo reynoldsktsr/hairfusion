@@ -4,12 +4,7 @@ get_header(); ?>
 	<div class="page-home full-width">
 			<div class="col-xs-12 swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/hf4m_slider_1_1260x500.png">
-					</div>
-					<div class="swiper-slide">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/hf4m_slider_2_1260x500.png">
-					</div>
+					<?php get_template_part( 'content', 'slider-main' ); ?>
 				</div>
 			</div>
 			<div class="col-xs-12 tagline">
