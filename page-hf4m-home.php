@@ -14,8 +14,12 @@ get_header(); ?>
 			<div class="col-sm-4 col-xs-12 homebox" style="min-height:260px;">
 				<?php get_template_part('content','subscribe-form'); ?>
 			</div>
-			<div class="col-sm-4 col-xs-12 homebox" style="min-height:260px;">HF4M Story</div>
-			<div class="col-sm-4 col-xs-12 homebox" style="min-height:260px;">Makeover Takeover</div>
+			<div class="col-sm-4 col-xs-12 homebox" style="min-height:260px;">
+				<?php get_template_part('content','hf4m-story'); ?>
+			</div>
+			<div class="col-sm-4 col-xs-12 homebox" style="min-height:260px;">
+				<?php get_template_part('content','makeover-takeover'); ?>
+			</div>
 		</div>
 
 		<div class="col-xs-12 tagline">

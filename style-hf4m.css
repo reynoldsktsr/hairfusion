@@ -6,7 +6,13 @@
 #wrapper .fusion-megamenu-wrapper .fusion-megamenu-holder { border: none;}
 #nav .fusion-navbar-nav .fusion-megamenu-wrapper .fusion-megamenu-holder .fusion-megamenu .fusion-megamenu-submenu { border: none; display: block; width: 100%;}
 
-.newsletter { }
+.newsletter form table { width: 100%;}
+.newsletter form table tbody tr * { display: inline-block;}
+.newsletter form table tbody tr th { width: 100px; text-align: right; padding-right: 10px; font-family: 'Helvetica Neue', sans-serif, arial; margin-bottom: 5px;}
+.newsletter form table tbody tr td { width: calc(100% - 100px);}
+.newsletter form table tbody tr td.newsletter-td-submit { margin-left: 100px; margin-top: 10px;}
+.newsletter form table tbody tr td input { border: none; width: 100%;}
+.newsletter form table tbody tr td.newsletter-td-submit input { background: #dec162; color: white; text-transform: uppercase;}
 
 #main { padding: 0 0 25px;}
 	#main .container { max-width: none;}
@@ -16,9 +22,10 @@
 	#main .page-home { width: 100%;}
 
 .page-home .row { padding-top: 25px;}
-.homebox { height: 335px; background: #27100a; color: #dec162;}
+.homebox { height: 335px; background: #27100a; color: #dec162; text-align: center;}
+.homebox:nth-child(1) { padding-left: 30px !important;}
 .homebox:nth-child(2) {border-left: 1px solid white; border-right: 1px solid white;}
-	.homebox h2 { text-align: center; text-transform: uppercase; color: #dec162; font-family: 'Helvetica Neue', sans-serif, arial !important;}
+	.homebox h2 { margin-top: 20px;text-align: center; text-transform: uppercase; color: #dec162; font-family: 'Helvetica Neue', sans-serif, arial !important;}
 	.homebox hr { width: 40% !important;}
 	.homebox img { width: 80%; margin-left: 10%;}
 
