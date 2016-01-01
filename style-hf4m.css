@@ -6,6 +6,8 @@
 #wrapper .fusion-megamenu-wrapper .fusion-megamenu-holder { border: none;}
 #nav .fusion-navbar-nav .fusion-megamenu-wrapper .fusion-megamenu-holder .fusion-megamenu .fusion-megamenu-submenu { border: none; display: block; width: 100%;}
 
+.newsletter { }
+
 #main { padding: 0 0 25px;}
 	#main .container { max-width: none;}
 	#main .full-width h1 { text-align: center; text-transform: uppercase; margin: .67em;}
@@ -14,25 +16,17 @@
 	#main .page-home { width: 100%;}
 
 .page-home .row { padding-top: 25px;}
-	.page-home .homebox { height: 335px; margin-bottom: 30px;}
-	.page-home .homebox.doubleHeight { height: 700px;}
-		.page-home .homebox div{ height: 100%; /*border: 1px solid gray*/;}
-			.page-home .homebox div h2 { text-align: center; text-transform: uppercase;}
-			.page-home .homebox div hr { width: 40% !important;}
-			.page-home .homebox div img { width: 80%; margin-left: 10%;}
+.homebox { height: 335px; background: #27100a; color: #dec162;}
+.homebox:nth-child(2) {border-left: 1px solid white; border-right: 1px solid white;}
+	.homebox h2 { text-align: center; text-transform: uppercase; color: #dec162; font-family: 'Helvetica Neue', sans-serif, arial !important;}
+	.homebox hr { width: 40% !important;}
+	.homebox img { width: 80%; margin-left: 10%;}
 
 .page-videos section #huge_it_videogallery, .page-photos section #huge_it_gallery { background-color: #ffffff; box-shadow: none;}
 	.page-videos section #huge_it_videogallery .huge_it_big_li, .page-photos section #huge_it_gallery .huge_it_big_li { border: none; border-radius: 0px;}
 		.page-videos section #huge_it_videogallery .huge_it_big_li img, .page-photos section #huge_it_gallery .huge_it_big_li img { border-radius: 0px; border: none;}
 		.page-videos section #huge_it_videogallery .huge_it_big_li .infoLayer, .page-photos section #huge_it_gallery .huge_it_big_li .infoLayer { border-radius: 0px; background-color: rgba(0,0,0,0.7);}
 .page-videos section div, .page-photos section div { display: none;}
-
-
-#cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxMiddleLeft, #cboxMiddleRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight { display: none;}
-#cboxContent { height: 530px !important;}
-#cboxNext { background: url(images/controls.png) no-repeat -50px 0 !important;}
-#cboxPrevious { background: url(images/controls.png) no-repeat -75px 0 !important;}
-#cboxCurrent { color: white !important;}
 
 .tagline { background: #dec162; text-transform: uppercase; font-weight: 50; text-align: center; min-height: 60px;}
 	.tagline p { font-size: 22pt; margin: 10px auto; font-weight: 100;}

@@ -11,9 +11,11 @@ get_header(); ?>
 				<p>Eliminate your hair loss within 1 hour or less</p>
 			</div>
 		<div class="row">
-			<div class="col-sm-4" style="min-height:260px;">Subscribe</div>
-			<div class="col-sm-4" style="min-height:260px;">HF4M Story</div>
-			<div class="col-sm-4" style="min-height:260px;">Makeover Takeover</div>
+			<div class="col-sm-4 col-xs-12 homebox" style="min-height:260px;">
+				<?php get_template_part('content','subscribe-form'); ?>
+			</div>
+			<div class="col-sm-4 col-xs-12 homebox" style="min-height:260px;">HF4M Story</div>
+			<div class="col-sm-4 col-xs-12 homebox" style="min-height:260px;">Makeover Takeover</div>
 		</div>
 
 		<div class="col-xs-12 tagline">
