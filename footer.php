@@ -123,24 +123,30 @@
 	<script src="<?php echo get_template_directory_uri();?>/swiper/js/swiper.min.js"></script>
 	<script src="<?php echo get_template_directory_uri();?>/swiper/js/swiper.jquery.js"></script>
 	<script src="<?php echo get_template_directory_uri();?>/swiper/js/swiper.jquery.min.js"></script>
-	  <script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    autoplay: 6000,
-    spaceBetween: 20,
-    
-    // If we need pagination
-    // pagination: '.swiper-pagination',
-    
-    // Navigation arrows
-    // nextButton: '.swiper-button-next',
-    // prevButton: '.swiper-button-prev',
-    
-    // And if we need scrollbar
-    // scrollbar: '.swiper-scrollbar',
-  })        
-  </script>
+	<script>        
+		var mainSwiper = new Swiper ('.main-slider-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+			autoplay: 6000,
+			spaceBetween: 20,
+			
+			// If we need pagination
+			// pagination: '.swiper-pagination',
+			
+			// Navigation arrows
+			// nextButton: '.swiper-button-next',
+			// prevButton: '.swiper-button-prev',
+			
+			// And if we need scrollbar
+			// scrollbar: '.swiper-scrollbar',
+		});
+		var makeoverTakeoverSwiper = new Swiper ('.makeover-takeover-slider-container', {
+			direction: 'horizontal',
+			loop: true,
+			autoplay: 6000,
+			spaceBetween: 20,
+		})
+	</script>
 </body>
 </html>
